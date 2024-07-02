@@ -4,49 +4,53 @@ import elementosDelJuego.*
 import teclado.*
 import mapas.*
 
-object imagenInicial{
-	var property position = game.at(0,0)
-	var property image = './assets/menuPrincipal.jpg'
-
-}
-
-object imagenGameOver{
-	var property position = game.at(0,0)
-	var property image = './assets/gameOver.jpg'
-
-}
-
-object fondoNegro{
-	var property position = game.at(0,0)
-	var property image = './assets/fondoNegro.jpg'
-
-}
-
-
 object juego {
+	var iniciado = false
 	
-	method menuPrincipal(){
+	method iniciar(){
 		game.title("Battle city")
-		game.width(17)
+			
 		game.height(13)
-
-		game.addVisual(imagenInicial)
+		game.width(17)
+		
+		self.configurarMenu()
 	}
-	
+		
+	method configurarMenu(){
+		
+		const menu = new Imagen(image = "./assets/menuPrincipal.jpg")
+		game.addVisual(menu)
+		
+		keyboard.enter().onPressDo{
+			if (!iniciado) {
+				game.removeVisual(menu)
+				iniciado = true
+				self.iniciarJuego()
+			}
+		}
+	}
+
 	method iniciarJuego(){
-		//game.removeVisual(imagenInicial)
 		game.clear()
 		tablero.mapaActual().crear()
 	}
 	
 	method ganaste(){
-		//falta implementarlo xD
+		const juegoCompletado = new Imagen(image = "./assets/juegoCompletado.jpg") 
 		game.clear()
-		game.addVisual(fondoNegro)
+		game.addVisual(juegoCompletado)
 	}
 	
 	method gameOver(){
+		const gameOver = new Imagen(image = './assets/gameOver.jpg')
 		game.clear()
-		game.addVisual(imagenGameOver)
+		game.addVisual(gameOver)
 	}
 }
+
+class Imagen {
+	
+	var property image
+	var property position = game.origin() 
+	
+}	

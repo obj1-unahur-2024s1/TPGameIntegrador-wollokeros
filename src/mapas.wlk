@@ -16,13 +16,16 @@ class Asesinar{
 	}
 }
 
-class Mapa{
+class Mapa inherits Imagen {
+	
+	const fondo = new Imagen(image = "./assets/fondoNegro.jpg") 
+	
 	method enemigosAAsesinar()
 	
 	method crear(){
 		game.clear()
 		var enemigosASpawnear = self.enemigosAAsesinar().size()
-		game.addVisual(fondoNegro)
+		game.addVisual(fondo)
 		const tankito = new Tankito()
 		game.addVisual(tankito)
 		teclado.configuracionDeHeroe(tankito)
