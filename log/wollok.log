@@ -1,0 +1,25 @@
+{"level":"info","message":"⌛ Building environment","timeElapsed":164,"timestamp":"2024-07-02T01:59:58.860Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Program%20Files%20%28x86%29/Wollok/workspace/jee/TPGameIntegrador-wollokeros","timestamp":"2024-07-02T01:59:58.870Z"}
+{"level":"info","message":"⌛ Validating src/juego.wpgm","timeElapsed":136,"timestamp":"2024-07-02T01:59:59.236Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":117,"timestamp":"2024-07-02T01:59:59.354Z"}
+{"level":"info","message":"⌛ Validating src/tests.wtest","timeElapsed":205,"timestamp":"2024-07-02T01:59:59.582Z"}
+{"level":"info","message":"⌛ Validating src/pepita.wlk","timeElapsed":130,"timestamp":"2024-07-02T01:59:59.713Z"}
+{"level":"info","message":"⌛ Validating src/juego.wpgm","timeElapsed":140,"timestamp":"2024-07-02T01:59:59.856Z"}
+{"level":"info","message":"onRequest - STRONG_FILES_CHANGED:c:\\Program Files (x86)\\Wollok\\workspace\\jee\\TPGameIntegrador-wollokeros\\src\\juego.wpgm","timestamp":"2024-07-02T02:00:02.414Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":150,"timestamp":"2024-07-02T02:00:02.565Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Program%20Files%20%28x86%29/Wollok/workspace/jee/TPGameIntegrador-wollokeros","timestamp":"2024-07-02T02:00:02.717Z"}
+{"level":"info","message":"Removing diagnostics from \\Program Files (x86)\\Wollok\\workspace\\jee\\TPGameIntegrador-wollokeros\\src\\juego.wpgm","timestamp":"2024-07-02T02:00:02.762Z"}
+{"level":"info","message":"onRequest - STRONG_FILES_CHANGED:c:\\Program Files (x86)\\Wollok\\workspace\\jee\\TPGameIntegrador-wollokeros\\src\\log4j.properties","timestamp":"2024-07-02T02:00:03.907Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":166,"timestamp":"2024-07-02T02:00:04.074Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Program%20Files%20%28x86%29/Wollok/workspace/jee/TPGameIntegrador-wollokeros","timestamp":"2024-07-02T02:00:04.188Z"}
+{"level":"info","message":"Removing diagnostics from \\Program Files (x86)\\Wollok\\workspace\\jee\\TPGameIntegrador-wollokeros\\src\\log4j.properties","timestamp":"2024-07-02T02:00:04.239Z"}
+{"level":"info","message":"onRequest - STRONG_FILES_CHANGED:c:\\Program Files (x86)\\Wollok\\workspace\\jee\\TPGameIntegrador-wollokeros\\src\\pepita.wlk","timestamp":"2024-07-02T02:00:05.802Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":197,"timestamp":"2024-07-02T02:00:06.000Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Program%20Files%20%28x86%29/Wollok/workspace/jee/TPGameIntegrador-wollokeros","timestamp":"2024-07-02T02:00:06.144Z"}
+{"level":"info","message":"Removing diagnostics from \\Program Files (x86)\\Wollok\\workspace\\jee\\TPGameIntegrador-wollokeros\\src\\pepita.wlk","timestamp":"2024-07-02T02:00:06.189Z"}
+{"level":"info","message":"onRequest - STRONG_FILES_CHANGED:c:\\Program Files (x86)\\Wollok\\workspace\\jee\\TPGameIntegrador-wollokeros\\src\\tests.wtest","timestamp":"2024-07-02T02:00:07.479Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":133,"timestamp":"2024-07-02T02:00:07.613Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Program%20Files%20%28x86%29/Wollok/workspace/jee/TPGameIntegrador-wollokeros","timestamp":"2024-07-02T02:00:07.745Z"}
+{"level":"info","message":"Removing diagnostics from \\Program Files (x86)\\Wollok\\workspace\\jee\\TPGameIntegrador-wollokeros\\src\\tests.wtest","timestamp":"2024-07-02T02:00:07.778Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":161,"timestamp":"2024-07-02T02:00:44.224Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///c%3A/Program%20Files%20%28x86%29/Wollok/workspace/jee/TPGameIntegrador-wollokeros","timestamp":"2024-07-02T02:00:44.230Z"}

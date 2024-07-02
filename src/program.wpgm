@@ -1,0 +1,14 @@
+import wollok.game.*
+import tablero.*
+import elementosDelJuego.*
+import teclado.*
+import pruebaDirecciones.*
+import juego.*
+
+program abc {
+	
+	juego.menuPrincipal()
+	keyboard.enter().onPressDo{ juego.iniciarJuego() }
+	game.start()
+}
+
