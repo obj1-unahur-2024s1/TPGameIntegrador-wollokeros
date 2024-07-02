@@ -18,7 +18,7 @@ class Asesinar{
 
 class Mapa{
 	
-	const fondo = new Imagen(image = "./assets/fondoNegro.jpg") 
+	const fondo = new Imagen(image = "./assets/fondoNegro_grid.jpg") 
 	
 	method enemigosAAsesinar()
 	
