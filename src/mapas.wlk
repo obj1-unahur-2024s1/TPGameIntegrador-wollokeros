@@ -19,10 +19,14 @@ class Asesinar{
 class Mapa{
 	
 	const fondo = new Imagen(image = "./assets/fondoNegro_grid.jpg") 
-	
 	method enemigosAAsesinar()
-	
+	method sonidoMapa(){
+		const sonidoMapa = game.sound("./assets/sonidos/nivelUno.mp3")
+		sonidoMapa.play()
+		sonidoMapa.volume(0.4)
+	}
 	method crear(){
+		self.sonidoMapa()
 		game.clear()
 		var enemigosASpawnear = self.enemigosAAsesinar().size()
 		game.addVisual(fondo)
@@ -41,7 +45,7 @@ class Mapa{
 				const enemigo = new Enemigo(position=game.at(11,12))
 				game.addVisual(enemigo)
 				game.onTick( enemigo.unTiempoDeDisparo(), enemigo.identity().toString(), { => enemigo.disparar() })
-				game.onTick( 500, enemigo.identity().toString(), { => enemigo.moverA(enemigo.posicionAleatoria()) })
+				game.onTick( 500, enemigo.identity().toString(), { => if (enemigo.image() != "./assets/explota.jpg") enemigo.moverA(enemigo.posicionAleatoria()) })
 				enemigosASpawnear -=1
 			}else{
 				game.removeTickEvent("nuevoEnemigo1")

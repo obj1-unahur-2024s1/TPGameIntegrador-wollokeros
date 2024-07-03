@@ -6,7 +6,6 @@ import pruebaDirecciones.*
 import juego.*
 
 program abc {
-	
 	juego.iniciar()
 	game.start()
 }

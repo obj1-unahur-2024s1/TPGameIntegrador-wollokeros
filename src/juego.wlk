@@ -36,9 +36,11 @@ object juego {
 	}
 	
 	method ganaste(){
-		const juegoCompletado = new Imagen(image = "./assets/juegoCompletado.jpg") 
+		const juegoCompletado = new Imagen(image = "./assets/ganaste.jpg") 
 		game.clear()
 		game.addVisual(juegoCompletado)
+		
+		
 	}
 	
 	method gameOver(){

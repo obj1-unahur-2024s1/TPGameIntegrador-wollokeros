@@ -50,8 +50,8 @@ class Bala {
 	}
 	
 	method serImpacado(){
-//		self.image("./assets/explota.jpg")
-//		game.schedule( 150, {game.removeVisual(self)} )
+		self.image("./assets/explota.jpg")
+		game.schedule( 150, {game.removeVisual(self)} )
 	}
 	
 	// Evitar errores al chocar las balas
@@ -121,7 +121,7 @@ class Tankito inherits Personaje{
 		
 	} 
 	 
-	method esBalaEnemiga(){
+	override method esBalaEnemiga(){
 		return esBalaEnemiga
 	} 
 	
@@ -200,7 +200,12 @@ class Enemigo inherits Personaje{
 				tablero.siguienteMapa()
 				game.schedule( 1000, {
 				tablero.vaciarPosiciones()
-				juego.iniciarJuego()
+//				juego.iniciarJuego()
+				if (tablero.numeroDeMapa()<4){
+					juego.iniciarJuego()
+				}else{
+					juego.ganaste()
+				}
 				} ) 
 			}
 			

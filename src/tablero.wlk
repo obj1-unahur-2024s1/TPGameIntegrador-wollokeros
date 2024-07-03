@@ -7,7 +7,7 @@ object tablero {
 	var posicionesOcupadas = []
 	
 	var unNumero = 0
-	var mapas = [ new Mapa1(), new Mapa2(), new Mapa3() ]
+	const mapas = [ new Mapa1(), new Mapa2(), new Mapa3() ]
 	
 	method vaciarPosiciones(){
 		posicionesOcupadas = []
@@ -65,7 +65,7 @@ object tablero {
 	
 	
 	method crearColumnaDeLadrillos_EnXCoordenadasy(unaFila, unArray ){
-		unArray.forEach( {numero => self.crearLadrilloEnCoordenada( game.at(unaFila, numero) )} )
+		unArray.forEach({numero => self.crearLadrilloEnCoordenada( game.at(unaFila, numero) )} )
 	}
 	
 	method crearFilaDeLadrillos_EnyCoordenadasX(unaColumna, unArray ){
