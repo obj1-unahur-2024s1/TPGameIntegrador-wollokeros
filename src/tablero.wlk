@@ -91,17 +91,12 @@ class Ladrillo{
 	method esBalaEnemigaLaRecibida(balaRecibida){}
 	
 	method enExplosion(){
-		return if( direccionDeBala == derecha ) "./assets/ladrillos/ladrilloRotoDerechaE.jpg"
-		else if ( direccionDeBala == abajo ) "./assets/ladrillos/ladrilloRotoAbajoE.jpg"
-		else if ( direccionDeBala == izquierda ) "./assets/ladrillos/ladrilloRotoIzquierdaE.jpg"
-		else "./assets/ladrillos/ladrilloRotoArribaE.jpg"
+		return  "./assets/ladrillos/ladrilloRoto" +direccionDeBala+"E.jpg"
 	}
 	
 	method destruido(){
-		return if( direccionDeBala == derecha ) "./assets/ladrillos/ladrilloRotoDerecha.jpg"
-		else if ( direccionDeBala == abajo ) "./assets/ladrillos/ladrilloRotoAbajo.jpg"
-		else if ( direccionDeBala == izquierda ) "./assets/ladrillos/ladrilloRotoIzquierda.jpg"
-		else "./assets/ladrillos/ladrilloRotoArriba.jpg"
+		return "./assets/ladrillos/ladrilloRoto"+direccionDeBala+".jpg"
+		
 	}
 	
 
@@ -138,10 +133,7 @@ class Cemento{
 	method esBalaEnemigaLaRecibida(balaRecibida){}
 	
 	method enExplosion(){
-		return if( self.direccionDeBala() == derecha ) "./assets/cemento/cementoExplosionDerecha.jpg"
-		else if ( self.direccionDeBala() == abajo ) "./assets/cemento/cementoExplosionAbajo.jpg"
-		else if ( self.direccionDeBala() == izquierda ) "./assets/cemento/cementoExplosionIzquierda.jpg"
-		else "./assets/cemento/cementoExplosionArriba.jpg"
+		return "./assets/cemento/cementoExplosion"+direccionDeBala+".jpg"
 	}
 	
 	method serImpacado(){
