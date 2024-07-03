@@ -51,7 +51,7 @@ class Bala {
 	
 	method serImpacado(){
 		self.image("./assets/explota.jpg")
-		game.schedule( 150, {game.removeVisual(self)} )
+		game.schedule( 50, {game.removeVisual(self)} )
 	}
 	
 	// Evitar errores al chocar las balas
