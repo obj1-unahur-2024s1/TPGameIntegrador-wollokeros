@@ -15,10 +15,8 @@ class Bala {
 	var property direccionDeBala = 0
 	
 	method direccionDeBala(){
-		return if( direccionDeBala == arriba ) "./assets/bala/bala-arriba.jpg" 
-		else if ( direccionDeBala == abajo ) "./assets/bala/bala-abajo.jpg" 
-		else if( direccionDeBala == izquierda ) "./assets/bala/bala-izquierda.jpg" 
-		else "./assets/bala/bala-derecha.jpg"
+		return "./assets/bala/bala-"+direccionDeBala+".jpg" 
+	
 	}
 	
 	method unId(){
