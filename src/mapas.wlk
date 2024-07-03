@@ -58,7 +58,7 @@ class Mapa{
 				const enemigo = new Enemigo(position=game.at(2,12))
 				game.addVisual(enemigo)
 				game.onTick( enemigo.unTiempoDeDisparo(), enemigo.identity().toString(), { => enemigo.disparar() })
-				game.onTick( 500, enemigo.identity().toString(), { => enemigo.moverA(enemigo.posicionAleatoria()) })
+				game.onTick( 500, enemigo.identity().toString(), { => if (enemigo.image() != "./assets/explota.jpg") enemigo.moverA(enemigo.posicionAleatoria()) })
 				enemigosASpawnear -=1
 			}else{
 				game.removeTickEvent("nuevoEnemigo2")
