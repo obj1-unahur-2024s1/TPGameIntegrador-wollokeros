@@ -139,10 +139,7 @@ class Tankito inherits Personaje{
 	}
 
 	 override method mirarA(direccionAMirar){
-		return if( direccionAMirar == arriba ) "./assets/tanke/tanke-arriba.jpg"
-		else if( direccionAMirar == abajo ) "./assets/tanke/tanke-abajo.jpg"
-		else if( direccionAMirar == derecha ) "./assets/tanke/tanke-derecha.jpg"
-		else "./assets/tanke/tanke-izquierda.jpg"
+		return "./assets/tanke/tanke-" +direccionAMirar+".jpg"
 	}
 	
 	override method serImpacado(){
@@ -182,10 +179,7 @@ class Enemigo inherits Personaje{
 	}
 	
 	 override method mirarA(direccionAMirar){
-		return if( direccionAMirar == arriba ) "./assets/enemigo/enemigo-arriba.jpg"
-		else if( direccionAMirar == abajo ) "./assets/enemigo/enemigo-abajo.jpg"
-		else if( direccionAMirar == derecha ) "./assets/enemigo/enemigo-derecha.jpg"
-		else "./assets/enemigo/enemigo-izquierda.jpg"
+		return "./assets/enemigo/enemigo-" +direccionAMirar+".jpg"
 	}
 	
 	override method serImpacado(){
